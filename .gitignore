@@ -100,6 +100,9 @@ dist
 # TernJS port file
 .tern-port
 
+# Temp folder
+tmp/
+
 # Elastic Beanstalk Files
 .elasticbeanstalk/*
 !.elasticbeanstalk/*.cfg.yml

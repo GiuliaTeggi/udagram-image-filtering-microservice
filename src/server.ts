@@ -1,7 +1,6 @@
 import express from 'express';
 import bodyParser from 'body-parser';
 import {filterImageFromURL, deleteLocalFiles} from './util/util';
-import { fstat } from 'fs';
 
 (async () => {
 
@@ -35,7 +34,7 @@ import { fstat } from 'fs';
   // Root Endpoint
   // Displays a simple message to the user
   app.get( "/", async ( req, res ) => {
-    res.send("try GET /filteredimage?image_url={{}} helooooo")
+    res.send("try GET /filteredimage?image_url={{}}")
   } );
   
   app.get("/filteredimage", async (req, res) => {
